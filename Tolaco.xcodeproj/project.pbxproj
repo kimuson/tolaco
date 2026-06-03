@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01BD564B5088BB0079B4CD15 /* TolacoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB6C3C76A7301A07C7A59F /* TolacoApp.swift */; };
+		1EBEB7986C1B436718592760 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D9E81CE90C4D11A6FCE9BC /* KeychainStore.swift */; };
+		32385613344E2BA17C39C21B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 7B7BFA679D3C3404CABC6F3A /* PrivacyInfo.xcprivacy */; };
+		33721E581406AB18967E4696 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5A5866F7E667BEDBBE1E4C7 /* InfoPlist.strings */; };
+		408CEBA8D3BC6C7574F2E5D8 /* MeetingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9ACA87548F30B8F96CFA6 /* MeetingDetailView.swift */; };
+		60F5CF34C19F5C2140367BAF /* MeetingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA66B93B9DF018AA107B86F /* MeetingStore.swift */; };
+		6210A76C84F8B91381FB0CBF /* ClaudeTranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AF2EEA1247B8231F29795 /* ClaudeTranslationService.swift */; };
+		647B527724228348C003C7B2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDBBB3D93AEE189DE191F9C /* SettingsView.swift */; };
+		7C2ADA1B1855DDBEDE4276C8 /* CopyMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE31C4EECC0439856FBCA5C /* CopyMenus.swift */; };
+		8D5F4E78826D2B5E36B117AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ED9EC8D31EC9268D92EC87 /* ContentView.swift */; };
+		981B91E0D809256053348971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34364A55F1B62AF886C50995 /* Assets.xcassets */; };
+		9FF886D404C754558B7923AA /* MeetingSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F9E7383D56B4B71980D8F /* MeetingSidebarView.swift */; };
+		A0CEC94832DAFA2A823443CA /* TranscriptExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD181FEB3A24689D74AE72 /* TranscriptExporter.swift */; };
+		B11FD66294370C10E20DB1D6 /* TranscriptSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C1D14AA37A25A05DB1BD0 /* TranscriptSegment.swift */; };
+		BB818425E50851649E99827A /* TranscriptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840194D931CFB11A126E4992 /* TranscriptStore.swift */; };
+		BFEF71736A408B0944EFE940 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9385ABE1D70B2807ECD8CA /* Meeting.swift */; };
+		C1E52F161A799FE51EB397D5 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE1F22E9CD199747E9BDCF /* TranslationService.swift */; };
+		C5DED3C182A03844FA4DF5BA /* LiveTranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66734B5DC00103C511CBF2B /* LiveTranscriptView.swift */; };
+		DCA31DAD55F068F30ADE348B /* AudioCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4358DF8C2C29C64698D54A7 /* AudioCaptureService.swift */; };
+		E8BE8DE6A8150284A3B232FF /* TranscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B41C09A79A103B80A927E /* TranscriptionService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		036AF2EEA1247B8231F29795 /* ClaudeTranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeTranslationService.swift; sourceTree = "<group>"; };
+		0DCE1F22E9CD199747E9BDCF /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		240FD986CB4AB9B20927113B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		34364A55F1B62AF886C50995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40D9E81CE90C4D11A6FCE9BC /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		54EB6C3C76A7301A07C7A59F /* TolacoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TolacoApp.swift; sourceTree = "<group>"; };
+		6BB9ACA87548F30B8F96CFA6 /* MeetingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingDetailView.swift; sourceTree = "<group>"; };
+		720F9E7383D56B4B71980D8F /* MeetingSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingSidebarView.swift; sourceTree = "<group>"; };
+		78ED9EC8D31EC9268D92EC87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		799C1D14AA37A25A05DB1BD0 /* TranscriptSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptSegment.swift; sourceTree = "<group>"; };
+		79DD181FEB3A24689D74AE72 /* TranscriptExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptExporter.swift; sourceTree = "<group>"; };
+		7B7BFA679D3C3404CABC6F3A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		840194D931CFB11A126E4992 /* TranscriptStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptStore.swift; sourceTree = "<group>"; };
+		9EDBBB3D93AEE189DE191F9C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ADE31C4EECC0439856FBCA5C /* CopyMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyMenus.swift; sourceTree = "<group>"; };
+		B2CA399E22AE19BCCE2C0725 /* Tolaco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tolaco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66734B5DC00103C511CBF2B /* LiveTranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTranscriptView.swift; sourceTree = "<group>"; };
+		BAA914313A0D6906B8F1C1FF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C22B41C09A79A103B80A927E /* TranscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionService.swift; sourceTree = "<group>"; };
+		CA9385ABE1D70B2807ECD8CA /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		E4358DF8C2C29C64698D54A7 /* AudioCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCaptureService.swift; sourceTree = "<group>"; };
+		FBA66B93B9DF018AA107B86F /* MeetingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		18E15866828CBD4960B17EB8 /* Tolaco */ = {
+			isa = PBXGroup;
+			children = (
+				34364A55F1B62AF886C50995 /* Assets.xcassets */,
+				78ED9EC8D31EC9268D92EC87 /* ContentView.swift */,
+				7B7BFA679D3C3404CABC6F3A /* PrivacyInfo.xcprivacy */,
+				54EB6C3C76A7301A07C7A59F /* TolacoApp.swift */,
+				A5A5866F7E667BEDBBE1E4C7 /* InfoPlist.strings */,
+				FF5F569E8583CC69ED50EC70 /* Models */,
+				F8C67F249C54C2AA806262F7 /* Services */,
+				F7F98BBE32D3645786F917F0 /* Views */,
+			);
+			path = Tolaco;
+			sourceTree = "<group>";
+		};
+		B4F418A0F4B2C62F4723AA01 = {
+			isa = PBXGroup;
+			children = (
+				18E15866828CBD4960B17EB8 /* Tolaco */,
+				BF606DA66FBA8682BCB6CE12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF606DA66FBA8682BCB6CE12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2CA399E22AE19BCCE2C0725 /* Tolaco.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7F98BBE32D3645786F917F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADE31C4EECC0439856FBCA5C /* CopyMenus.swift */,
+				B66734B5DC00103C511CBF2B /* LiveTranscriptView.swift */,
+				6BB9ACA87548F30B8F96CFA6 /* MeetingDetailView.swift */,
+				720F9E7383D56B4B71980D8F /* MeetingSidebarView.swift */,
+				9EDBBB3D93AEE189DE191F9C /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8C67F249C54C2AA806262F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E4358DF8C2C29C64698D54A7 /* AudioCaptureService.swift */,
+				036AF2EEA1247B8231F29795 /* ClaudeTranslationService.swift */,
+				40D9E81CE90C4D11A6FCE9BC /* KeychainStore.swift */,
+				FBA66B93B9DF018AA107B86F /* MeetingStore.swift */,
+				79DD181FEB3A24689D74AE72 /* TranscriptExporter.swift */,
+				C22B41C09A79A103B80A927E /* TranscriptionService.swift */,
+				0DCE1F22E9CD199747E9BDCF /* TranslationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF5F569E8583CC69ED50EC70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA9385ABE1D70B2807ECD8CA /* Meeting.swift */,
+				799C1D14AA37A25A05DB1BD0 /* TranscriptSegment.swift */,
+				840194D931CFB11A126E4992 /* TranscriptStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		731B75F927E5EBCEA8D86312 /* Tolaco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F18DF014330C7D5131B365AD /* Build configuration list for PBXNativeTarget "Tolaco" */;
+			buildPhases = (
+				7F1CC0CCC6EC4806B0B55880 /* Sources */,
+				E4C39982792839D3BE4D351A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tolaco;
+			packageProductDependencies = (
+			);
+			productName = Tolaco;
+			productReference = B2CA399E22AE19BCCE2C0725 /* Tolaco.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D24D6890FE94489B4D1E0519 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					731B75F927E5EBCEA8D86312 = {
+						DevelopmentTeam = A5JC858CXQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 74F0E0B522BC499C8AC74946 /* Build configuration list for PBXProject "Tolaco" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ja,
+			);
+			mainGroup = B4F418A0F4B2C62F4723AA01;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BF606DA66FBA8682BCB6CE12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				731B75F927E5EBCEA8D86312 /* Tolaco */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4C39982792839D3BE4D351A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981B91E0D809256053348971 /* Assets.xcassets in Resources */,
+				33721E581406AB18967E4696 /* InfoPlist.strings in Resources */,
+				32385613344E2BA17C39C21B /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F1CC0CCC6EC4806B0B55880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA31DAD55F068F30ADE348B /* AudioCaptureService.swift in Sources */,
+				6210A76C84F8B91381FB0CBF /* ClaudeTranslationService.swift in Sources */,
+				8D5F4E78826D2B5E36B117AA /* ContentView.swift in Sources */,
+				7C2ADA1B1855DDBEDE4276C8 /* CopyMenus.swift in Sources */,
+				1EBEB7986C1B436718592760 /* KeychainStore.swift in Sources */,
+				C5DED3C182A03844FA4DF5BA /* LiveTranscriptView.swift in Sources */,
+				BFEF71736A408B0944EFE940 /* Meeting.swift in Sources */,
+				408CEBA8D3BC6C7574F2E5D8 /* MeetingDetailView.swift in Sources */,
+				9FF886D404C754558B7923AA /* MeetingSidebarView.swift in Sources */,
+				60F5CF34C19F5C2140367BAF /* MeetingStore.swift in Sources */,
+				647B527724228348C003C7B2 /* SettingsView.swift in Sources */,
+				01BD564B5088BB0079B4CD15 /* TolacoApp.swift in Sources */,
+				A0CEC94832DAFA2A823443CA /* TranscriptExporter.swift in Sources */,
+				B11FD66294370C10E20DB1D6 /* TranscriptSegment.swift in Sources */,
+				BB818425E50851649E99827A /* TranscriptStore.swift in Sources */,
+				E8BE8DE6A8150284A3B232FF /* TranscriptionService.swift in Sources */,
+				C1E52F161A799FE51EB397D5 /* TranslationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5A5866F7E667BEDBBE1E4C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				240FD986CB4AB9B20927113B /* en */,
+				BAA914313A0D6906B8F1C1FF /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C6966C89F9A3763ED43E4E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = A5JC858CXQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		7F252FDD00444CEECAAA981E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tolaco/Tolaco.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Tolaco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nexaspark.tolaco;
+				PRODUCT_NAME = Tolaco;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		89EF9DBA1F70B281F54739CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tolaco/Tolaco.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Tolaco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nexaspark.tolaco;
+				PRODUCT_NAME = Tolaco;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9C5D54D463107642A3B21246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = A5JC858CXQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74F0E0B522BC499C8AC74946 /* Build configuration list for PBXProject "Tolaco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C6966C89F9A3763ED43E4E5 /* Debug */,
+				9C5D54D463107642A3B21246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F18DF014330C7D5131B365AD /* Build configuration list for PBXNativeTarget "Tolaco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89EF9DBA1F70B281F54739CB /* Debug */,
+				7F252FDD00444CEECAAA981E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D24D6890FE94489B4D1E0519 /* Project object */;
+}

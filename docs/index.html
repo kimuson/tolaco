@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tolaco — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; color: #1d1d1f; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161618; } a { color: #6f9bff; } code { background:#26262b; } }
+  h1 { font-size: 2rem; margin: 0 0 .2em; }
+  h2 { font-size: 1.25rem; margin: 1.8em 0 .5em; }
+  .meta { color: #86868b; font-size: .9rem; margin-bottom: 2em; }
+  .summary { background: linear-gradient(135deg,#5b67f6,#9e4cee); color:#fff; padding: 16px 18px; border-radius: 12px; }
+  .summary a { color: #fff; text-decoration: underline; }
+  a { color: #2f5bff; }
+  code { background:#f1f1f4; padding: 1px 5px; border-radius: 5px; font-size: .92em; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 2.4em 0; }
+  footer { color: #86868b; font-size: .85rem; margin-top: 3em; }
+</style>
+</head>
+<body>
+<h1>Tolaco — Privacy Policy</h1>
+<p class="meta">
+  Provider: NEXASPARK Inc. (株式会社NEXASPARK) &middot;
+  Contact: <a href="mailto:yuta.kimura@nexaspark.org">yuta.kimura@nexaspark.org</a><br>
+  Effective date: 2026-06-02 &middot; Last updated: 2026-06-02
+</p>
+
+<p class="summary">
+  Tolaco is a privacy-first, local-first macOS app. <strong>We do not operate any server,
+  account system, or analytics, and we do not collect, receive, store, or sell any of your
+  personal data.</strong> Your audio, transcripts, and translations stay on your Mac, except
+  for the optional Claude translation feature you can turn on, which sends text directly to
+  Anthropic using <strong>your own</strong> Anthropic API key (see Section 4).
+</p>
+
+<h2>1. Summary</h2>
+<p>Tolaco transcribes and translates meeting audio. All core processing happens on your
+device. The only data that can leave your Mac is text you choose to send to Anthropic via
+the optional Claude translation feature, using your own API key.</p>
+
+<h2>2. What Tolaco does on your device</h2>
+<p>All of the following happens <strong>entirely on your Mac</strong> and is never
+transmitted to NEXASPARK:</p>
+<ul>
+  <li><strong>Audio capture.</strong> With your permission, Tolaco captures system/meeting
+  audio using Apple's ScreenCaptureKit (and, where you enable it, microphone input for your
+  own voice). Audio is processed in real time and is not uploaded to us.</li>
+  <li><strong>Transcription.</strong> Speech is converted to text on-device using Apple's
+  Speech framework. Audio used for transcription does not leave your Mac.</li>
+  <li><strong>Translation (on-device).</strong> The first-pass ("tentative") translation
+  uses Apple's on-device Translation framework. No text is sent to us for this.</li>
+</ul>
+
+<h2>3. What is stored on your Mac</h2>
+<ul>
+  <li><strong>Meetings and transcripts</strong> — saved as files in
+  <code>~/Library/Application Support/Tolaco/Meetings/</code>.</li>
+  <li><strong>Settings</strong> — your preferences (target language, glossary, feature
+  toggles) are stored in the app's local preferences.</li>
+  <li><strong>Anthropic API key</strong> — if you provide one, it is stored securely in the
+  macOS Keychain and is never sent to NEXASPARK.</li>
+</ul>
+<p>This data is under your control and is not transmitted to us. See Section 7 for how to
+review and delete it.</p>
+
+<h2>4. Optional third-party processing: Anthropic (Claude)</h2>
+<p>Tolaco includes an <strong>optional</strong> "Claude translation" feature. It is
+<strong>off by default</strong> and only operates when you enable it, you are not in
+Offline-only mode, and you have entered your <strong>own</strong> Anthropic API key.</p>
+<p>When enabled, Tolaco sends the following directly from your Mac to Anthropic's API
+(<code>https://api.anthropic.com/v1/messages</code>):</p>
+<ul>
+  <li>the text segment to be translated;</li>
+  <li>up to the last 5 transcript segments (source text and prior translation) for context;</li>
+  <li>your glossary entries, if you have configured any.</li>
+</ul>
+<ul>
+  <li>This uses <strong>your own Anthropic account and API key</strong>. Your data is handled
+  under <strong>Anthropic's</strong> terms and privacy policy, not ours.</li>
+  <li>We never receive this data and have no access to your Anthropic account or usage.</li>
+  <li>You are responsible for any content you send and for the cost of your Anthropic usage.</li>
+</ul>
+<p>Please review Anthropic's
+<a href="https://www.anthropic.com/legal/privacy">privacy policy</a> and
+<a href="https://www.anthropic.com/legal/commercial-terms">commercial/API terms</a>.
+If you do not want any text to leave your device, do not enable Claude translation, or turn
+on <strong>Offline-only mode</strong>.</p>
+
+<h2>5. Apple frameworks</h2>
+<p>Transcription and tentative translation rely on Apple's on-device Speech and Translation
+frameworks, and audio capture relies on Apple's ScreenCaptureKit. Your use of these
+operating-system features is also subject to
+<a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+
+<h2>6. Permissions Tolaco requests</h2>
+<ul>
+  <li><strong>Screen Recording</strong> — required to capture audio from meeting apps (e.g.
+  Zoom). Tolaco does not use or store video.</li>
+  <li><strong>Microphone</strong> — used only if you choose to capture your own voice.</li>
+  <li><strong>Speech Recognition</strong> — used for on-device transcription.</li>
+</ul>
+<p>You can grant or revoke these at any time in <strong>System Settings → Privacy &amp;
+Security</strong>.</p>
+
+<h2>7. Data retention, control, and deletion</h2>
+<ul>
+  <li><strong>Transcripts/meetings:</strong> delete individual meetings from within the app
+  at any time.</li>
+  <li><strong>API key:</strong> remove it at any time in the app's Settings; this deletes it
+  from your Keychain.</li>
+  <li><strong>Everything else:</strong> uninstalling Tolaco and removing
+  <code>~/Library/Application Support/Tolaco/</code> deletes its local data.</li>
+</ul>
+<p>Because we hold none of your data, there is no server-side copy for us to delete.</p>
+
+<h2>8. No analytics, tracking, or advertising</h2>
+<p>Tolaco contains no analytics, telemetry, crash-reporting, advertising, or third-party
+tracking SDKs. We do not track you across apps or websites, and we do not sell or share
+personal data.</p>
+
+<h2>9. Children</h2>
+<p>Tolaco is not directed to children and is intended for general business/productivity use.</p>
+
+<h2>10. International data transfers</h2>
+<p>We do not transfer your data internationally because we do not collect it. If you enable
+Claude translation, your data is transmitted to Anthropic and may be processed in other
+countries under Anthropic's terms.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>We may update this policy from time to time. Material changes will be reflected by an
+updated "Last updated" date and, where appropriate, noted in the app or release notes.</p>
+
+<h2>12. Contact</h2>
+<p>Questions about privacy:
+<a href="mailto:yuta.kimura@nexaspark.org">yuta.kimura@nexaspark.org</a></p>
+
+<hr>
+<footer>
+  © 2026 NEXASPARK Inc. (株式会社NEXASPARK). Tolaco is open-source software released under the
+  MIT License.
+</footer>
+</body>
+</html>

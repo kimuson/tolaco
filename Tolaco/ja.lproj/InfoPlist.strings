@@ -1,0 +1,3 @@
+"NSScreenCaptureUsageDescription" = "Zoom などの会議アプリの音声を取得して翻訳字幕を生成するために画面収録の権限が必要です（映像は使用しません）。";
+"NSSpeechRecognitionUsageDescription" = "音声を文字起こしして翻訳するために音声認識を使用します。処理は端末内で完結します。";
+"NSMicrophoneUsageDescription" = "必要に応じて自分の声を翻訳する際にマイクを使用します。";

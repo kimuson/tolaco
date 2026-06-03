@@ -1,0 +1,3 @@
+"NSScreenCaptureUsageDescription" = "Tolaco needs Screen Recording permission to capture audio from meeting apps such as Zoom and generate translated captions. Video is not used.";
+"NSSpeechRecognitionUsageDescription" = "Tolaco uses speech recognition to transcribe and translate audio. Processing is done entirely on your device.";
+"NSMicrophoneUsageDescription" = "Tolaco uses the microphone to translate your own voice when you enable that feature.";

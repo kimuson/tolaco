@@ -1,0 +1,51 @@
+name: Tolaco
+options:
+  bundleIdPrefix: org.nexaspark
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    MACOSX_DEPLOYMENT_TARGET: "26.0"
+    DEVELOPMENT_TEAM: "A5JC858CXQ"
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "-"
+    ENABLE_HARDENED_RUNTIME: YES
+
+targets:
+  Tolaco:
+    type: application
+    platform: macOS
+    sources:
+      - path: Tolaco
+        excludes:
+          - "Info.plist"
+          - "Tolaco.entitlements"
+    info:
+      path: Tolaco/Info.plist
+      properties:
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, ja]
+        CFBundleShortVersionString: "0.1.0"
+        CFBundleVersion: "1"
+        LSApplicationCategoryType: public.app-category.productivity
+        LSMinimumSystemVersion: $(MACOSX_DEPLOYMENT_TARGET)
+        NSHighResolutionCapable: true
+        NSScreenCaptureUsageDescription: "Tolaco needs Screen Recording permission to capture audio from meeting apps such as Zoom and generate translated captions. Video is not used."
+        NSSpeechRecognitionUsageDescription: "Tolaco uses speech recognition to transcribe and translate audio. Processing is done entirely on your device."
+        NSMicrophoneUsageDescription: "Tolaco uses the microphone to translate your own voice when you enable that feature."
+    entitlements:
+      path: Tolaco/Tolaco.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.device.audio-input: true
+        com.apple.security.network.client: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.nexaspark.tolaco
+        PRODUCT_NAME: Tolaco
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
