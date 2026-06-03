@@ -1,137 +1,131 @@
 # Tolaco
 
-Zoomなどの会議アプリの音声をリアルタイムで文字起こしし、多言語に翻訳するmacOS アプリケーションです。
+A macOS application that transcribes audio from meeting apps such as Zoom in real time and translates it into multiple languages.
 
-## 機能
+## Features
 
-- **リアルタイム文字起こし**: 会議の音声をSwiftUIで即座に表示
-- **翻訳機能**: Claude APIを使用した高精度な多言語翻訳
-- **会議管理**: 過去の会議を保存・検索・管理
-- **転写物エクスポート**: テキスト形式で転写物をエクスポート
-- **キーチェーン連携**: APIキーを安全に保管
+- **Real-time transcription**: Instantly displays meeting audio with SwiftUI
+- **Translation**: High-accuracy multilingual translation powered by the Claude API
+- **Meeting management**: Save, search, and manage past meetings
+- **Transcript export**: Export transcripts in text format
+- **Keychain integration**: Securely store your API key
 
-## システム要件
+## System Requirements
 
-- macOS 26.0 以上
+- macOS 26.0 or later
 - Swift 6.0
 
-## インストール
+## Installation
 
-### 前提条件
+### Prerequisites
 
-1. Xcodeをインストール
-2. Claude APIキーを取得（https://console.anthropic.com）
+1. Install Xcode
+2. Obtain a Claude API key (https://console.anthropic.com)
 
-### ビルド
+### Build
 
 ```bash
-# 依存関係をインストール
+# Install dependencies
 xcodebuild build
 
-# または Xcode を開いて ⌘B でビルド
+# Or open Xcode and build with ⌘B
 open Tolaco.xcodeproj
 ```
 
-## 使い方
+## Usage
 
-### 初期設定
+### Initial Setup
 
-1. アプリを起動
-2. 設定画面（⚙️）でClaude APIキーを入力
-3. マイクと画面収録の権限を許可
+1. Launch the app
+2. Enter your Claude API key in the settings screen (⚙️)
+3. Grant microphone and screen recording permissions
 
-### ライブ文字起こし
+### Live Transcription
 
-1. 「ライブ」タブを選択
-2. 「録音開始」をクリック
-3. Zoomなどの会議アプリで共有を開始
-4. リアルタイムで文字起こしと翻訳が表示されます
+1. Select the "Live" tab
+2. Click "Start Recording"
+3. Start sharing in a meeting app such as Zoom
+4. Transcription and translation are displayed in real time
 
-### 会議の管理
+### Managing Meetings
 
-- **表示**: サイドバーから保存済み会議を選択
-- **エクスポート**: 「エクスポート」ボタンでテキストファイルに保存
-- **削除**: 不要な会議を削除
+- **View**: Select a saved meeting from the sidebar
+- **Export**: Save to a text file with the "Export" button
+- **Delete**: Remove meetings you no longer need
 
-## ファイル構成
+## Project Structure
 
 ```
 Tolaco/
-├── Services/           # ビジネスロジック
-│   ├── TranscriptionService.swift     # 文字起こし処理
-│   ├── TranslationService.swift       # 翻訳処理
-│   ├── ClaudeTranslationService.swift # Claude API連携
-│   ├── AudioCaptureService.swift      # 音声取得
-│   ├── MeetingStore.swift             # 会議データ管理
-│   ├── TranscriptExporter.swift       # 転写物エクスポート
-│   └── KeychainStore.swift            # 認証情報管理
-├── Views/              # UI コンポーネント
-│   ├── ContentView.swift           # メイン画面
-│   ├── LiveTranscriptView.swift    # ライブ文字起こし画面
-│   ├── MeetingDetailView.swift     # 会議詳細画面
-│   ├── MeetingSidebarView.swift    # サイドバー
-│   ├── SettingsView.swift          # 設定画面
-│   └── CopyMenus.swift             # コピー機能
-└── Models/             # データモデル
-    ├── Meeting.swift           # 会議データモデル
-    ├── TranscriptSegment.swift # 転写セグメントモデル
-    └── TranscriptStore.swift   # 転写データストア
+├── Services/           # Business logic
+│   ├── TranscriptionService.swift     # Transcription processing
+│   ├── TranslationService.swift       # Translation processing
+│   ├── ClaudeTranslationService.swift # Claude API integration
+│   ├── AudioCaptureService.swift      # Audio capture
+│   ├── MeetingStore.swift             # Meeting data management
+│   ├── TranscriptExporter.swift       # Transcript export
+│   └── KeychainStore.swift            # Credential management
+├── Views/              # UI components
+│   ├── ContentView.swift           # Main screen
+│   ├── LiveTranscriptView.swift    # Live transcription screen
+│   ├── MeetingDetailView.swift     # Meeting detail screen
+│   ├── MeetingSidebarView.swift    # Sidebar
+│   ├── SettingsView.swift          # Settings screen
+│   └── CopyMenus.swift             # Copy functionality
+└── Models/             # Data models
+    ├── Meeting.swift           # Meeting data model
+    ├── TranscriptSegment.swift # Transcript segment model
+    └── TranscriptStore.swift   # Transcript data store
 ```
 
-## 環境変数
+## Environment Variables
 
-APIキーはキーチェーン経由で管理されます。設定画面から入力してください。
+The API key is managed via the Keychain. Enter it from the settings screen.
 
-## 開発
+## Development
 
-### 依存関係
+### Dependencies
 
-- SwiftUI（iOS/macOS標準）
+- SwiftUI (standard for iOS/macOS)
 - Anthropic Claude SDK
 
-### コード規約
+### Coding Conventions
 
-- Swift 6.0の厳格な並行処理チェック（minimal）を有効化
-- SwiftUIのベストプラクティスに従う
+- Enable Swift 6.0 strict concurrency checking (minimal)
+- Follow SwiftUI best practices
 
-### ビルド設定
+### Build Settings
 
 - **Bundle ID**: `org.nexaspark.tolaco`
 - **Deployment Target**: macOS 26.0
-- **Code Signing**: 自動署名
+- **Code Signing**: Automatic signing
 
-## セキュリティ
+## Security
 
-- アプリサンドボックス: 無効（API呼び出しのため）
-- マイク入力: 許可
-- ネットワークアクセス: 許可（Claude API通信用）
-- 画面収録: 許可（会議音声キャプチャ用）
+- App Sandbox: Disabled (for API calls)
+- Microphone input: Allowed
+- Network access: Allowed (for Claude API communication)
+- Screen recording: Allowed (for capturing meeting audio)
 
-## トラブルシューティング
+## Troubleshooting
 
-### 「権限が拒否されました」エラー
+### "Permission denied" error
 
-システム設定から以下の権限を許可してください：
-- マイクへのアクセス
-- 画面収録
+Grant the following permissions in System Settings:
+- Microphone access
+- Screen recording
 
-### APIキーエラー
+### API key error
 
-キーチェーン設定が正しいことを確認し、設定画面でAPIキーを再入力してください。
+Verify that the Keychain settings are correct, and re-enter your API key in the settings screen.
 
-## ライセンス
+## License
 
-MIT License。詳細は [LICENSE](LICENSE) を参照してください。
+MIT License. See [LICENSE](LICENSE) for details.
 
-## 法務ドキュメント
+## Legal Documents
 
-- [プライバシーポリシー](docs/PRIVACY.md)（公開ページ: <https://kimuson.github.io/tolaco/> ）
-- [利用規約](docs/TERMS.md)
+- [Privacy Policy](docs/PRIVACY.md) (public page: <https://kimuson.github.io/tolaco/>)
+- [Terms of Service](docs/TERMS.md)
 
-## 著者
 
-NEXASPARK Inc.（株式会社NEXASPARK）
-
-## 更新履歴
-
-- v0.1.0: 初版リリース
